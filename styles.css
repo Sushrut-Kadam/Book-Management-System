@@ -1,0 +1,82 @@
+body {
+    margin-left: 25%;
+}
+
+.navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    background-color: black;
+}
+
+.navBar img {
+    position: relative;
+    top: 5vh; 
+    left: 5vw; 
+    width: 10vw;            /* the image gets scaled just by specifying the width without specifying height */
+    margin: 0.5em;
+}
+
+.navBar ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0.5em;
+    margin-top: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    list-style-type: none;
+}
+
+.navBar ul li{
+    margin: 0.5em;
+}
+
+li a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 0.5rem;
+}
+
+th{
+    font-size: large;
+    font-weight: bold;
+    background-color: lightgrey;
+}
+
+tr:nth-child(even){
+    background-color: lavender;
+}
+
+#search-row{
+    margin-top: 2em;
+}
+
+#search-row input{
+    height: 2em;
+    border: 1px solid black;
+}
+
+#result{
+    margin-top: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+#result tr{
+    background-color: lavender;
+    border: 1px solid black;
+}

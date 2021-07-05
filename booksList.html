@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Book List table</title>
+
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="navBar">
+
+        <img src="./media/books.png" alt="Icon">
+
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./booksList.html">Books Lists</a></li>
+            <li><a href="#">Customers</a></li>
+        </ul>
+
+    </div>
+
+    <h1>Books Table</h1>
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Author</th>
+            <th>Cost</th>
+        </tr>
+        <tr>
+            <td colspan="2">War and Peace</td>
+            <td>Leo Tolstoy</td>
+            <td>Rs. 1499/-</td>
+        </tr>
+        <tr>
+            <td colspan="2">Song of Solomon</td>
+            <td>Toni Morrison</td>
+            <td>Rs. 1280/-</td>
+        </tr>
+        <tr>
+            <td colspan="2">Ulysses</td>
+            <td>James Joyce</td>
+            <td>Rs. 1360/-</td>
+        </tr>
+        <tr>
+            <td colspan="2">The shadow of the wind</td>
+            <td>Carlos Ruiz Zafon</td>
+            <td>Rs. 2400/-</td>
+        </tr>
+        <tr>
+            <td colspan="2">The Lond of the rings</td>
+            <td>J.R.R. Tolkien</td>
+            <td>Rs. 720/-</td>
+        </tr>
+    </table>
+
+    <div id="search-row">
+        <h3>Search for a row</h3>
+        <input type="text" placeholder="enter the row number" id="row_number">
+        <input type="submit" value="Submit" onclick="getRow(document.getElementById('row_number').value)">
+    </div>
+
+    <div id="result">
+        
+    </div>
+</body>
+
+</html>
