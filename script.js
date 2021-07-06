@@ -5,7 +5,7 @@ function getRow(arg){
     // arg=1;
     // console.log(tableRow[arg].cells);
 
-    const resultHolder = document.getElementById("result"); 
+    const resultHolder = document.getElementById("search-result"); 
     resultHolder.innerHTML = "";                    //to clear the older content
     
     const resultTable = document.createElement("table");
@@ -19,6 +19,10 @@ function getRow(arg){
     for(var i=0; i<rowElements.length; i++){
         // console.log(rowElements[i].innerHTML);
         const resultCol = document.createElement("td");
+        
+        if(i == 0)
+            resultCol.colSpan = 2;
+        
         resultCol.innerHTML = rowElements[i].innerHTML;
         resultRow.appendChild(resultCol);
     }

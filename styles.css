@@ -70,13 +70,12 @@ tr:nth-child(even){
     border: 1px solid black;
 }
 
-#result{
+#search-result{
     margin-top: 2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
 }
 
-#result tr{
+#search-result tr{
     background-color: lavender;
     border: 1px solid black;
 }
