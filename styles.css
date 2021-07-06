@@ -61,6 +61,14 @@ tr:nth-child(even){
     background-color: lavender;
 }
 
+#sort-table{
+    margin-top: 1em;
+}
+
+#sort-table input{
+    margin: 0 1em;
+}
+
 #search-row{
     margin-top: 2em;
 }
@@ -77,5 +85,14 @@ tr:nth-child(even){
 
 #search-result tr{
     background-color: lavender;
+    border: 2px solid black;
+}
+
+.button{
+    width: 10em;
+    height: 2em;
+    background-color: lightgrey;
     border: 1px solid black;
+    border-radius: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

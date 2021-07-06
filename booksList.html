@@ -27,7 +27,7 @@
     </div>
 
     <h1>Books Table</h1>
-    <table>
+    <table id="booksTable">
         <tr>
             <th colspan="2">Name</th>
             <th>Author</th>
@@ -60,14 +60,19 @@
         </tr>
     </table>
 
+    <div id="sort-table">
+        <h3>Sort table</h3>
+        <input type="button" value="Ascending" name="asc-sort" id="asc-sort" class="button" onclick="sortAscending()">
+        <input type="button" value="Descending" name="desc-sort" id="desc-sort" class="button" onclick="sortDescending()">
+    </div>
+
     <div id="search-row">
         <h3>Search for a row</h3>
         <input type="text" placeholder="enter the row number" id="row_number">
-        <input type="submit" value="Submit" onclick="getRow(document.getElementById('row_number').value)">
+        <input type="button" value="Submit" class="button" onclick="getRow(document.getElementById('row_number').value)">
     </div>
 
     <div id="search-result">
-        
     </div>
 
 </body>
