@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./styles.css">
     
     <title>Customers</title>
+
+    <script src="./script.js"></script>
 </head>
 
 <body>
@@ -25,12 +27,12 @@
     </div>
 
     <h1>Customers Table</h1>
-    <table>
+    <table id="customerTable">
         <tr>
-            <th>Sr. No.</th>
-            <th colspan="2">Name</th>
-            <th>Email</th>
-            <th>Contact</th>
+            <th><input type="button" value="Sr. No." class="table-header" onclick="sortColumnWise(0)"></th>
+            <th colspan="2"><input type="button" value="Name" class="table-header" onclick="sortColumnWise(1)"></th>
+            <th><input type="button" value="Email" class="table-header" onclick="sortColumnWise(2)"></th>
+            <th><input type="button" value="Contact" class="table-header" onclick="sortColumnWise(3)"></th>
         </tr>
         <tr>
             <td>1</td>
@@ -63,6 +65,7 @@
             <td>9876543214</td>
         </tr>
     </table>
+    <h3>Note: Click on the column name to sort according to that column</h3>
 </body>
 
 </html>

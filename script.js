@@ -79,3 +79,24 @@ function sortDescending() {
         rowCount--;
     }
 }
+
+function sortColumnWise(column){
+    var table = document.getElementById("customerTable");
+    
+    var rows = table.rows;
+    var rowCount = rows.length;
+    
+    var sortByColumn = column;               //choosing the column according which to sort
+
+    while (rowCount) {
+        for (var i = 1; i < (rows.length - 1); i++) {
+            var element1 = rows[i].getElementsByTagName("td")[sortByColumn];               
+            var element2 = rows[i + 1].getElementsByTagName("td")[sortByColumn];
+
+            if (element1.innerHTML.toLowerCase() > element2.innerHTML.toLowerCase()) {
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            }
+        }
+        rowCount--;
+    }   
+}

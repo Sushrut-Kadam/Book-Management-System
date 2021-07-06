@@ -52,9 +52,14 @@ td {
 }
 
 th{
-    font-size: large;
-    font-weight: bold;
     background-color: lightgrey;
+}
+
+.table-header{
+    border: none;
+    background-color: lightgrey;
+    font-size: medium;
+    font-weight: bold;
 }
 
 tr:nth-child(even){
